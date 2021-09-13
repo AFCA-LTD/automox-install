@@ -128,13 +128,6 @@ function Install-AxAgent {
 
 #endregion Functions
 
-$path = "C:\temp\"
-If(!(test-path $path))
-{
-      New-Item -ItemType Directory -Force -Path $path
-}
-
-
 #region Operations
 
 # Check for existing Agent Service and Running Status
